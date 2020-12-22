@@ -8,7 +8,12 @@ class UserInDB(BaseModel):
     last_name: str
     department: str
     clearance: int
-    documents: str #Optional [dict] = None
+    document_1: str #Optional [dict] = None
+    caducidad_1:str
+    estado_1:str
+    document_2: str #Optional [dict] = None
+    caducidad_2:str
+    estado_2:str
     
 database_users = Dict[str,UserInDB]
 
