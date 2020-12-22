@@ -6,7 +6,8 @@ class UserIn(BaseModel):
 
 
 class UserOut(BaseModel):
-    email:str
     name: str
     last_name: str
+    department: str
+    clearance : int
     documents : dict
