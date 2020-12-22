@@ -8,7 +8,7 @@ class UserInDB(BaseModel):
     last_name: str
     department: str
     clearance: int
-    documents: Optional [dict] = None
+    documents: str #Optional [dict] = None
     
 database_users = Dict[str,UserInDB]
 
@@ -19,7 +19,12 @@ database_users = {
                                         "last_name":"Murgas",    
                                         "department": "Gerencia",
                                         "clearance" : 5,
-                                        "documents":{"Acuerdo de Paz":"https://docs.google.com/acuerdodepaz","Reforma Tributaria":"www.reformatributaria.com"}}),
+                                        "document_1":"Acuerdo de Paz : https://docs.google.com/acuerdodepaz",
+                                        "estado_1":"Activo",
+                                        "caducidad_1":"31/12/2021",
+                                        "document_2":"Reforma tributaria : https://www.reformatributaria.com/actualización",
+                                        "estado_2":"Caducado",
+                                        "caducidad_2":"20/04/2020"  }),
     "martin@example.com" : UserInDB(**{"email": "martin@example.com",
                                         "password": "ejemplo987",
                                         "name": "Martin",

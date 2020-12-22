@@ -10,4 +10,9 @@ class UserOut(BaseModel):
     last_name: str
     department: str
     clearance : int
-    documents : dict
+    document_1 : str
+    estado_1:str
+    caducidad_1:str
+    document_2 : str
+    estado_2:str
+    caducidad_2:str
